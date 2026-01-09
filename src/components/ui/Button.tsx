@@ -2,10 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '../../utils/cn';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({ 
@@ -13,7 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
   size = 'md', 
   className, 
   children, 
-  ...props 
+  onClick
 }) => {
   const baseClasses = "font-display font-bold transition-all rounded-lg flex items-center justify-center gap-2";
   
@@ -34,7 +36,7 @@ export const Button: React.FC<ButtonProps> = ({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className={cn(baseClasses, variants[variant], sizes[size], className)}
-      {...props}
+      onClick={onClick}
     >
       {children}
     </motion.button>
