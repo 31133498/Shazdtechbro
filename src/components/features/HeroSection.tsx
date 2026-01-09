@@ -42,7 +42,7 @@ export const HeroSection: React.FC = () => {
             >
               From navigating the world with a broken phone to pursuing a{' '}
               <span className="text-primary font-medium">5.0 GPA goal</span>. 
-              Sanni Shazily Oladipupo: AI Engineer and Data Scientist driven by technical excellence and massive social impact.
+              <strong>Sanni Shazily Oladipupo</strong>: AI Engineer and Data Scientist driven by technical excellence and massive social impact.
             </motion.p>
             
             <motion.div 

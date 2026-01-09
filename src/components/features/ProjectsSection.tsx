@@ -23,45 +23,54 @@ export const ProjectsSection: React.FC = () => {
   return (
     <section className="py-24 bg-background-light dark:bg-background-dark" id="projects">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-end justify-between mb-16 border-b border-slate-200 dark:border-slate-800 pb-8">
-          <div>
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-primary font-display text-sm font-bold uppercase tracking-widest mb-3 italic"
-            >
-              // Portfolio
-            </motion.h2>
-            <motion.h3 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="text-slate-900 dark:text-white text-4xl md:text-5xl font-display font-bold"
-            >
-              Featured Projects
-            </motion.h3>
-          </div>
-          <motion.a 
+        <div className="text-center mb-16">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-primary font-display text-sm font-bold uppercase tracking-widest mb-3 italic"
+          >
+            // Portfolio
+          </motion.h2>
+          <motion.h3 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-slate-900 dark:text-white text-4xl md:text-5xl font-display font-bold mb-6"
+          >
+            AI & Machine Learning Projects
+          </motion.h3>
+          <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-primary hover:underline font-display font-medium flex items-center gap-2 mb-2" 
-            href="https://github.com/31133498"
-            target="_blank"
-            rel="noopener noreferrer"
+            className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
           >
-            View All
-            <span className="material-symbols-outlined text-sm">open_in_new</span>
-          </motion.a>
+            Production-ready AI applications solving real-world problems in healthcare, education, and social impact.
+          </motion.p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {projects?.map((project, index) => (
             <ProjectCard key={project.id} {...project} index={index} />
           ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <motion.a 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-primary hover:underline font-display font-medium inline-flex items-center gap-2" 
+            href="https://github.com/31133498"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View All Projects on GitHub
+            <span className="material-symbols-outlined text-sm">open_in_new</span>
+          </motion.a>
         </div>
       </div>
     </section>
