@@ -67,7 +67,7 @@ export const Header: React.FC = () => {
             <img 
               className="w-full h-full object-cover" 
               alt="Professional portrait of Sanni Shazily Oladipupo" 
-              src="/src/images/Passports  (1).jpg" 
+              src="/Passports  (1).jpg" 
             />
           </div>
         </div>

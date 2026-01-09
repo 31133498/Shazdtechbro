@@ -72,7 +72,7 @@ export const HeroSection: React.FC = () => {
                 <img 
                   className="w-full h-full object-cover" 
                   alt="Sanni Shazily Oladipupo - The Cracked Dev" 
-                  src="/src/images/Passports  (1).jpg"
+                  src="/Passports  (1).jpg"
                 />
               </div>
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center animate-pulse">

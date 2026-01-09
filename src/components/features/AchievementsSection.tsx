@@ -13,19 +13,19 @@ const achievements: Achievement[] = [
     title: "Lumina AI Platform",
     event: "234 Project Hackathon Winner",
     description: "Won AI for Social Good category with Lumina, an AI-powered adaptive educational platform transforming learning.",
-    imagePlaceholder: "/src/images/234.jpg"
+    imagePlaceholder: "/234.jpg"
   },
   {
     title: "Veritas-AI",
     event: "AWS Hackathon Winner", 
     description: "Won using AI to create smart scalable business applications with Veritas-AI, an AI-powered insurance claim auditor.",
-    imagePlaceholder: "/src/images/aws.jpg"
+    imagePlaceholder: "/aws.jpg"
   },
   {
     title: "MamaSafe Platform",
     event: "AHEAD Hackathon by Drugstoc Winner",
     description: "Won with MamaSafe, an AI, EMR API and Pharmacovigilance API powered platform protecting pregnant mothers from risky drug complications.",
-    imagePlaceholder: "/src/images/ahead.jpg"
+    imagePlaceholder: "/ahead.jpg"
   }
 ];
 

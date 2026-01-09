@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
               <img 
                 className="w-full h-full object-cover" 
                 alt="Sanni Shazily Oladipupo" 
-                src="/src/images/Passports  (1).jpg"
+                src="/Passports  (1).jpg"
               />
             </div>
           </div>
