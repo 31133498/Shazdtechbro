@@ -21,16 +21,16 @@ export const ContactSection: React.FC = () => {
           transition={{ delay: 0.1 }}
           className="text-slate-900 dark:text-white text-4xl md:text-5xl font-display font-bold mb-6"
         >
-          Ready to Build Something Amazing?
+          Let's Build Something
         </motion.h3>
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
           className="text-slate-600 dark:text-slate-400 text-lg mb-12 max-w-2xl mx-auto"
         >
-          Whether you're looking for AI solutions, need a technical co-founder, or want to collaborate on impactful projects, let's discuss how we can create something extraordinary together.
+          Open to technical collaborations, co-founder conversations, mentorship, and opportunities aligned with building real things for real people.
         </motion.p>
         
         <motion.div 

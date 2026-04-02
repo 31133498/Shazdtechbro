@@ -40,16 +40,16 @@ export const ProjectsSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-slate-900 dark:text-white text-4xl md:text-5xl font-display font-bold mb-6"
           >
-            AI & Machine Learning Projects
+            Things I Have Shipped
           </motion.h3>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
           >
-            Production-ready AI applications solving real-world problems in healthcare, education, and social impact.
+            Production-ready AI applications solving problems that matter.
           </motion.p>
         </div>
         

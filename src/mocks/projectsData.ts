@@ -5,7 +5,7 @@ export const projectsData: Project[] = [
     id: '1',
     number: '01',
     title: 'Dermascan',
-    description: 'An AI/ML powered platform that can detect and predict various kind of skin cancers, give suggestive methods in how to combat it naturally or with medicines that can help(in any language), and connect you to dermatologists.',
+    description: 'An AI platform that detects and predicts multiple types of skin cancer, recommends treatment options in any language, and connects patients directly to dermatologists.',
     image: '/dermascan.png',
     technologies: ['Python', 'TensorFlow', 'React'],
     link: 'https://dermascan-app.vercel.app/'
@@ -14,7 +14,7 @@ export const projectsData: Project[] = [
     id: '2',
     number: '02',
     title: 'Lumina',
-    description: 'An AI-powered educational platform that takes self learning to the next level by deploying adaptive learning. It learns the students learning methods and interests to personalize their learning experience. Won "AI for Social Impact" at the 234project foundation.',
+    description: 'An adaptive AI learning platform that studies how each student learns and personalises their experience accordingly. Won AI for Social Impact at the 234 Project Foundation Hackathon.',
     image: '/lumina.png',
     technologies: ['Next.js', 'AI/ML', 'PostgreSQL'],
     link: 'https://edusbest.vercel.app/'
@@ -22,8 +22,8 @@ export const projectsData: Project[] = [
   {
     id: '3',
     number: '03',
-    title: 'Mamasafe',
-    description: 'Protects pregnant mothers using AI, EMR API and Pharmacovigilance API. Uses Bio-LLMs to check drug risks, Dorra EMR APIs for medical history, and tracks drug quality. Won the AHEAD hackathon at Drugstoc Pharmaceutical.',
+    title: 'MamaSafe',
+    description: 'Protects pregnant mothers from dangerous drug interactions using Bio-LLMs, Dorra EMR APIs for medical history, and Pharmacovigilance APIs for real-time drug quality tracking. Won the AHEAD Hackathon at Drugstoc Pharmaceutical.',
     image: '/mamasafe.png',
     technologies: ['AI/ML', 'EMR API', 'Bio-LLMs'],
     link: 'https://mamasafe.vercel.app/'
@@ -31,28 +31,37 @@ export const projectsData: Project[] = [
   {
     id: '4',
     number: '04',
-    title: 'Optic-gov',
-    description: 'An AI and Blockchain powered platform acting as a paying auditor for infrastructural projects in Nigeria. Eliminates corruption by ensuring funds are only released when roads meet quality standards verified by AI.',
+    title: 'Veritas-AI',
+    description: 'An AI insurance claim auditor that uses geomapping and EXIF data to detect fraud in minutes rather than weeks. Won the AWS West Africa Hackathon for scalable business applications.',
+    image: '/veritas-ai.png',
+    technologies: ['AI', 'Geomapping', 'FastAPI'],
+    link: 'https://veritas-ai-dcfw.vercel.app/'
+  },
+  {
+    id: '5',
+    number: '05',
+    title: 'Optic-Gov',
+    description: 'An AI and blockchain platform that acts as an independent auditor for Nigerian infrastructure projects. Funds are only released when road quality is verified by computer vision, eliminating the corruption loop.',
     image: '/optic-gov.png',
     technologies: ['AI', 'Blockchain', 'Computer Vision'],
     link: 'https://optic-gov.vercel.app/'
   },
   {
-    id: '5',
-    number: '05',
-    title: 'Trust-grid',
-    description: 'A trust-first SDK engine platform that protects user privacy and saves businesses NDPR compliance costs. Stores user data securely and only gives organizations access to required data via simple API.',
+    id: '6',
+    number: '06',
+    title: 'Trust-Grid',
+    description: 'A privacy-first SDK engine that stores user data securely and gives organisations access only to the specific fields they need via API. Built to cut NDPR compliance costs for Nigerian businesses.',
     image: '/trust-grid.png',
-    technologies: ['SDK', 'Privacy', 'API'],
+    technologies: ['SDK', 'Privacy Tech', 'REST API'],
     link: 'https://trust-grid-eight.vercel.app/'
   },
   {
-    id: '6',
-    number: '06',
-    title: 'Veritas-AI',
-    description: 'AI powered insurance platform designed to audit claims in minutes using geomapping and exif data to detect fraud. Won the hackathon at AWS West Africa conference for scalable business applications.',
-    image: '/veritas-ai.png',
-    technologies: ['AI', 'Geomapping', 'FastAPI'],
-    link: 'https://veritas-ai-dcfw.vercel.app/'
+    id: '7',
+    number: '07',
+    title: 'PharmChain',
+    description: 'A predictive AI platform securing pharmaceutical supply chains across Africa. Uses drug intelligence and real-time verification to prevent counterfeit medicines from reaching patients.',
+    image: '/pharmchain.png',
+    technologies: ['Python', 'AI/ML', 'FastAPI'],
+    status: 'In Development'
   }
 ];

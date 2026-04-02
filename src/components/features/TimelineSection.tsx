@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Radio, GraduationCap, Rocket, LucideIcon } from 'lucide-react';
+import { Radio, Laptop, Trophy, Users, Zap, LucideIcon } from 'lucide-react';
 
 interface TimelineMilestone {
   phase: string;
@@ -13,22 +13,34 @@ interface TimelineMilestone {
 const milestones: TimelineMilestone[] = [
   {
     phase: "PHASE 1: THE SPARK",
-    title: "The Broken Phone Hardware",
-    description: "Starting with limited resources, a broken smartphone became the catalyst for deep technical curiosity. Learning the fundamentals of logic and computation without a proper PC.",
-    Icon: Radio,
+    title: "A broken phone and a big question",
+    description: "Limited resources. No PC. A smartphone that barely worked. That was the starting point. Instead of waiting for better conditions, I used what I had to learn how computers think.",
+    Icon: Radio
+  },
+  {
+    phase: "PHASE 2: THE BUILD",
+    title: "Shipping real things under pressure",
+    description: "Secondary school hackathons. Borrowed laptops. Winning competitions in a school uniform. By the time I gained admission to the University of Lagos, I had already built, broken, and rebuilt more than most students see in four years.",
+    Icon: Laptop
+  },
+  {
+    phase: "PHASE 3: THE RECOGNITION",
+    title: "5 wins and counting",
+    description: "AWS. 234 Project. AHEAD Africa. Daydream. Youthpreneur. Five hackathon wins across healthcare, education, insurance, and entrepreneurship. Each one a stress test of ideas against real problems with real deadlines.",
+    Icon: Trophy
+  },
+  {
+    phase: "PHASE 4: THE COMMUNITY",
+    title: "Building what we wished existed",
+    description: "Co-founded TeenovateX Labs with Anas Abubakar Masama and Yasin Lasisi. Started from a problem we were living. Now 1,000+ teenagers strong, visiting secondary schools across Lagos, and backed by Hack Club.",
+    Icon: Users
+  },
+  {
+    phase: "PHASE 5: NOW",
+    title: "Deeper in the work",
+    description: "Building PharmChain. Leading growth at Setld. Running TeenovateX outreach across Lagos schools. Implementing everything learned from the sharpest intellects available. This is the chapter where it compounds.",
+    Icon: Zap,
     isActive: true
-  },
-  {
-    phase: "PHASE 2: ACADEMIC RIGOR",
-    title: "The 5.0 GPA Pursuit",
-    description: "Transforming resilience into academic excellence. A relentless commitment to maintaining the highest possible GPA while building real-world AI applications.",
-    Icon: GraduationCap
-  },
-  {
-    phase: "PHASE 3: SOCIAL IMPACT",
-    title: "Architecting the Future",
-    description: "Developing DermaScan and Ilmeen. Applying high-level AI engineering to solve systemic problems in healthcare and education across the continent.",
-    Icon: Rocket
   }
 ];
 
@@ -52,7 +64,7 @@ export const TimelineSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-slate-900 dark:text-white text-4xl font-display font-bold"
           >
-            The Journey Tracker
+            How I Got Here
           </motion.h3>
         </div>
 

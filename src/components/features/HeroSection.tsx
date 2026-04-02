@@ -35,25 +35,32 @@ export const HeroSection: React.FC = () => {
               The <span className="text-primary italic">Cracked</span> Dev.
             </motion.h1>
             
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-xl md:text-2xl text-slate-300 leading-relaxed font-light mb-10 max-w-2xl"
+              className="text-xl md:text-2xl text-slate-300 leading-relaxed font-light mb-4 max-w-2xl"
             >
-              From navigating the world with a broken phone to pursuing a{' '}
-              <span className="text-primary font-medium">5.0 GPA goal</span>. 
-              <strong>Sanni Shazily Oladipupo</strong>: AI Engineer and Data Scientist driven by technical excellence and massive social impact.
+              AI Engineer and Data Scientist building real solutions for real problems across Africa.
             </motion.p>
-            
-            <motion.div 
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="text-base md:text-lg text-slate-400 leading-relaxed font-light mb-10 max-w-2xl"
+            >
+              200L Data Science student at the University of Lagos. <span className="text-primary font-medium">5x Hackathon Winner.</span> Co-founder of TeenovateX Labs. I build AI products in healthcare, education, governance, and beyond.
+            </motion.p>
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button variant="primary" size="lg">
-                View My Journey
+                View My Work
                 <ArrowRight size={20} />
               </Button>
               <Button variant="secondary" size="lg">

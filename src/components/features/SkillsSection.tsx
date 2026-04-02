@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, BarChart3, Code2, LucideIcon } from 'lucide-react';
+import { Brain, Globe, BarChart3, Server, LucideIcon } from 'lucide-react';
 
 interface SkillCategory {
   title: string;
@@ -12,17 +12,22 @@ const skillCategories: SkillCategory[] = [
   {
     title: "AI & Machine Learning",
     Icon: Brain,
-    skills: ["PyTorch", "TensorFlow", "NLP", "Computer Vision", "Scikit-learn"]
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "NLP", "Computer Vision", "Pandas", "Matplotlib"]
+  },
+  {
+    title: "Web Development",
+    Icon: Globe,
+    skills: ["React", "Next.js", "FastAPI", "Tailwind CSS", "TypeScript", "JavaScript", "HTML/CSS"]
   },
   {
     title: "Data Engineering",
     Icon: BarChart3,
-    skills: ["Pandas", "SQL", "Matplotlib", "R Programming", "Apache Spark"]
+    skills: ["SQL", "R Programming", "Apache Spark", "Supabase", "PostgreSQL"]
   },
   {
-    title: "Development",
-    Icon: Code2,
-    skills: ["Next.js", "FastAPI", "Docker", "AWS", "CI/CD"]
+    title: "Infrastructure & Tools",
+    Icon: Server,
+    skills: ["AWS", "Docker", "Git", "Vercel", "CI/CD", "Figma"]
   }
 ];
 
@@ -59,7 +64,7 @@ export const SkillsSection: React.FC = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}

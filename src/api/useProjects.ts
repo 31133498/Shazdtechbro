@@ -9,6 +9,7 @@ export interface Project {
   technologies: string[];
   link?: string;
   number?: string;
+  status?: string;
 }
 
 const fetchProjects = async (): Promise<Project[]> => {

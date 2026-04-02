@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
             © 2025 Sanni Shazily Oladipupo. All rights reserved.
           </p>
           <p className="text-slate-500 text-sm font-display italic">
-            Designed with <span className="text-primary tracking-tighter">&lt;Code /&gt;</span> and Scholarly Rigor.
+            I am Sanni Shazily. If only I knew better, I would do better.
           </p>
         </div>
       </div>

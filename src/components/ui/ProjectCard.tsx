@@ -9,6 +9,7 @@ interface ProjectCardProps {
   technologies: string[];
   link?: string;
   number?: string;
+  status?: string;
   index: number;
 }
 
@@ -19,6 +20,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies,
   link,
   number,
+  status,
   index
 }) => {
   return (
@@ -34,6 +36,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       {number && (
         <div className="absolute top-4 left-4 z-10 w-12 h-12 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center">
           <span className="text-background-dark font-display font-black text-lg">{number}</span>
+        </div>
+      )}
+      {status && (
+        <div className="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-slate-900/90 border border-primary/40 backdrop-blur-sm">
+          <span className="text-primary font-display font-bold text-xs uppercase tracking-widest">{status}</span>
         </div>
       )}
       
