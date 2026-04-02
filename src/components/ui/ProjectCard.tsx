@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
@@ -51,9 +52,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             {title}
           </h4>
           {link && (
-            <span className="material-symbols-outlined text-slate-500 hover:text-primary transition-colors">
-              open_in_new
-            </span>
+            <ExternalLink size={20} className="text-slate-500 hover:text-primary transition-colors" />
           )}
         </div>
         

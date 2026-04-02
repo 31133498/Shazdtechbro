@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Terminal, Mail, MapPin, PlayCircle } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="text-primary">
-                <span className="material-symbols-outlined text-3xl">terminal</span>
+                <Terminal size={28} />
               </div>
               <h2 className="text-white font-display text-2xl font-bold tracking-tight">
                 The Cracked Dev
@@ -98,15 +99,15 @@ export const Footer: React.FC = () => {
             </h5>
             <ul className="space-y-4 text-slate-400">
               <li className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary text-sm">mail</span>
+                <Mail size={14} className="text-primary" />
                 <a href="mailto:sannishazily@gmail.com" className="hover:text-primary transition-colors">sannishazily@gmail.com</a>
               </li>
               <li className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary text-sm">location_on</span>
+                <MapPin size={14} className="text-primary" />
                 Lagos, Nigeria
               </li>
               <li className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary text-sm">play_circle</span>
+                <PlayCircle size={14} className="text-primary" />
                 <a href="https://www.youtube.com/@ShazdTechbro" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">YouTube</a>
               </li>
             </ul>

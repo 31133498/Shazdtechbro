@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 import { ProjectCard } from '../ui/ProjectCard';
 import { useProjects } from '../../api/useProjects';
 
@@ -69,7 +70,7 @@ export const ProjectsSection: React.FC = () => {
             rel="noopener noreferrer"
           >
             View All Projects on GitHub
-            <span className="material-symbols-outlined text-sm">open_in_new</span>
+            <ExternalLink size={14} />
           </motion.a>
         </div>
       </div>

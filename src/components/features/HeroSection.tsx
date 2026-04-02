@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ArrowRight, Code2 } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export const HeroSection: React.FC = () => {
@@ -53,7 +54,7 @@ export const HeroSection: React.FC = () => {
             >
               <Button variant="primary" size="lg">
                 View My Journey
-                <span className="material-symbols-outlined">arrow_forward</span>
+                <ArrowRight size={20} />
               </Button>
               <Button variant="secondary" size="lg">
                 Latest Projects
@@ -76,7 +77,7 @@ export const HeroSection: React.FC = () => {
                 />
               </div>
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center animate-pulse">
-                <span className="material-symbols-outlined text-background-dark text-2xl">code</span>
+                <Code2 size={24} className="text-background-dark" />
               </div>
             </div>
           </motion.div>

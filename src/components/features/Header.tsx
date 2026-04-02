@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Terminal } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export const Header: React.FC = () => {
@@ -17,7 +18,7 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="text-primary">
-            <span className="material-symbols-outlined text-3xl">terminal</span>
+            <Terminal size={30} />
           </div>
           <h2 className="text-slate-900 dark:text-white font-display text-xl font-bold tracking-tight">
             The Cracked Dev

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Mail, Briefcase } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   return (
@@ -45,7 +46,7 @@ export const ContactSection: React.FC = () => {
             href="mailto:sannishazily@gmail.com"
             className="bg-primary text-background-dark px-8 py-4 rounded-lg font-display font-bold text-lg hover:brightness-110 transition-all shadow-[0_0_15px_rgba(19,236,73,0.3)] flex items-center justify-center gap-2"
           >
-            <span className="material-symbols-outlined">mail</span>
+            <Mail size={20} />
             Send Email
           </motion.a>
           <motion.a
@@ -56,7 +57,7 @@ export const ContactSection: React.FC = () => {
             rel="noopener noreferrer"
             className="border border-primary/20 text-primary hover:bg-primary/5 px-8 py-4 rounded-lg font-display font-bold text-lg transition-all flex items-center justify-center gap-2"
           >
-            <span className="material-symbols-outlined">work</span>
+            <Briefcase size={20} />
             Connect on LinkedIn
           </motion.a>
         </motion.div>
